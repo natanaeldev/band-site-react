@@ -1,0 +1,217 @@
+@use "../../style/partials/utilities/var" as *;
+@use "../../style/partials/utilities/mixin" as *;
+@use "../../style/partials/utilities/font" as *;
+
+.footer {
+  background-color: $transparent-black;
+  color: $white;
+
+  @include mobile {
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 0.938rem;
+    font-family: "avenir", sans-serif;
+    font-weight: 500;
+    line-height: 1.25rem;
+  }
+
+  @include tablet {
+    padding: 2.25rem;
+    padding-top: 2.5rem;
+    font-size: 0.938rem;
+    font-family: "avenir", sans-serif;
+    font-weight: 500;
+    line-height: 1.875rem;
+  }
+  @include desktop {
+    padding-right: 5rem;
+    padding-left: 2.15rem;
+    padding-top: 2.5rem;
+    // height: 100vh;
+  }
+
+  &__header {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      margin-left: 1rem;
+    }
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
+    }
+  }
+  &__title {
+    @include mobile {
+      font-size: 1.813rem;
+    }
+    @include tablet {
+      font-size: 1.875rem;
+      margin-bottom: 1.25rem;
+    }
+
+    @include desktop {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+    }
+  }
+  &__wrapper {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+  }
+  &__icon {
+    @include mobile {
+      display: flex;
+      margin-right: 1.25rem;
+      height: 1.875rem;
+      margin-bottom: 1.25rem;
+    }
+
+    @include tablet {
+      display: flex;
+      margin-right: 1.25rem;
+
+      height: 1.875rem;
+      margin-bottom: 1.25rem;
+    }
+    @include desktop {
+      display: flex;
+      margin-right: 1.25rem;
+      height: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+  &__icon-box {
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &__detail-box {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__detail {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 0.55rem 0;
+      font-size: 0.875rem;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      margin: 0 1rem;
+      font-size: 0.875rem;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      font-size: 0.938rem;
+      margin: 0 2rem;
+    }
+  }
+
+  &__detail-pa {
+    color: $mercury;
+    &--seond-line {
+      white-space: break-spacess;
+    }
+  }
+
+  .padding {
+    padding: 1rem 0;
+  }
+
+  &__logo {
+    @include mobile {
+      margin-top: 5.313rem;
+      margin-bottom: 1.25rem;
+    }
+    @include tablet {
+      margin: 0rem;
+    }
+    @include desktop {
+      margin: 1rem;
+    }
+  }
+
+  &__copy-right {
+    font-size: 0.938rem;
+    @include desktop {
+      margin-left: 7rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+span {
+  margin: 0.55rem 0;
+  @include tablet {
+    margin: 1rem;
+  }
+  @include desktop {
+    margin: 1rem;
+  }
+}
+
+.hidden {
+  @include tablet {
+    visibility: hidden;
+  }
+
+  @include desktop {
+    visibility: hidden;
+  }
+}
+
+.hidden1 {
+  @include mobile {
+    visibility: hidden;
+  }
+}

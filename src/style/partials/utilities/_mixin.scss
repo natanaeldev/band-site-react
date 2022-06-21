@@ -1,0 +1,41 @@
+@use "../utilities/var" as *;
+@mixin mobile {
+  @media screen and (max-width: $mobile-size-mx) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-size-m) and (max-width: $tablet-size-mx) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-size-m) {
+    @content;
+  }
+}
+
+@mixin hero($url, $height, $width) {
+  background-image: linear-gradient(rgba($opacity, 50%), rgba($opacity, 50%)),
+    url($url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: $height;
+  width: $width;
+}
+
+@mixin button($size, $width) {
+  height: 2.5rem;
+  width: $width;
+  border-radius: 4px;
+  color: $white;
+  border: none;
+  background-color: $transparent-black;
+  font-size: $size;
+  line-height: 1.25rem;
+  font-family: "avenir-bold", sans-serif;
+  font-weight: 500;
+}

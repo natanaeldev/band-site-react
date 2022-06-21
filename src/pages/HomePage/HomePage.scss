@@ -1,0 +1,19 @@
+@use "../../style/partials/global";
+@use "../../style/partials/utilities/var" as *;
+@use "../../style/partials/utilities/mixin" as *;
+@use "../../style/partials/utilities/font" as *;
+
+.avatar1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  @include tablet {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+  }
+}
+
+.cite {
+  font-size: 0.938rem;
+}

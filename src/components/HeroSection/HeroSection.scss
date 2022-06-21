@@ -1,0 +1,42 @@
+@use "../../style/partials/utilities/var" as *;
+@use "../../style/partials/utilities/mixin" as *;
+@use "../../style/partials/utilities/font" as *;
+
+.hero {
+  @include hero("../../../assets/Images/hero-bio.jpg", 50vh, 100%);
+
+  @include tablet {
+    @include hero("../../../assets/Images/hero-bio.jpg", 75vh, 100%);
+  }
+  @include desktop {
+    @include hero("../../../assets/Images/hero-bio.jpg", 100vh, 100%);
+  }
+  &__wrapper {
+    padding: 0 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include tablet {
+      padding: 0 5rem;
+      height: 100%;
+    }
+    @include desktop {
+      display: flex;
+      padding: 0 10rem;
+      // height: 100%;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 24px;
+    @include tablet {
+      color: $white;
+      font-size: 50px;
+    }
+    @include desktop {
+      color: $white;
+      font-size: 60px;
+    }
+  }
+}

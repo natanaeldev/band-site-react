@@ -1,0 +1,66 @@
+@use "../../style/partials/utilities/var" as *;
+@use "../../style/partials/utilities/mixin" as *;
+@use "../../style/partials/utilities/font" as *;
+
+.gallery {
+  padding: 1rem;
+  @include tablet {
+    padding: 3.375rem;
+  }
+  @include desktop {
+    padding: 0 6.25rem;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 1rem;
+    @include tablet {
+      width: 12.5rem;
+      padding-bottom: 0.625rem;
+    }
+    @include desktop {
+      width: 21.875rem;
+      padding-bottom: 0.313rem;
+    }
+  }
+  &__title {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    font-family: "avenir", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: $transparent-black;
+    @include tablet {
+      padding-bottom: 1.25rem;
+
+      font-family: "avenir", sans-serif;
+      font-size: 2.813rem;
+      font-weight: 700;
+      color: $transparent-black;
+    }
+    @include desktop {
+      padding-bottom: 1.25rem;
+
+      font-family: "avenir", sans-serif;
+      font-size: 2.813rem;
+      font-weight: 700;
+      color: $transparent-black;
+    }
+  }
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 0.625rem;
+      width: 100%;
+    }
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 0.625rem;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,195 @@
+@use "../../style/partials/utilities/var" as *;
+@use "../../style/partials/utilities/mixin" as *;
+@use "../../style/partials/utilities/font" as *;
+
+.conversation {
+  padding: 1rem;
+  &__wrapper {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+
+    justify-content: center;
+    @include tablet {
+      display: flex;
+      padding: 1rem;
+      width: 100%;
+
+      justify-content: center;
+    }
+  }
+  &__form-field {
+    font-weight: 600;
+
+    color: $transparent-black;
+    min-height: 2.25rem;
+    width: 95%;
+    background-color: $weird-white;
+    margin-bottom: 1rem;
+    padding: 0.625rem;
+    border: 1px solid $mercury;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 0.938rem;
+
+    @include tablet {
+      font-weight: 600;
+
+      color: $transparent-black;
+      min-height: 36px;
+      width: 95%;
+      background-color: $weird-white;
+      margin-bottom: 1rem;
+      padding: 0.625rem;
+      border: 1px solid $mercury;
+      border-radius: 4px 4px 4px 4px;
+      font-size: 0.938rem;
+    }
+
+    @include desktop {
+      font-weight: 600;
+
+      color: $transparent-black;
+      min-height: 2.25rem;
+      width: 95%;
+      background-color: $weird-white;
+      margin-bottom: 1rem;
+      padding: 0.625rem;
+      border: 1px solid $mercury;
+      border-radius: 4px 4px 4px 4px;
+      font-size: 0.938rem;
+    }
+  }
+
+  margin: 0.938rem 0;
+  &__form-button {
+    @include button(0.938rem, 100%);
+    margin: 0.938rem 0;
+    margin: 0.938rem 0;
+    @include desktop {
+      @include button(0.938rem, 35%);
+      position: relative;
+      left: 25rem;
+      margin: 0.938rem 0;
+      margin: 0.938rem 0;
+    }
+    @include tablet {
+      @include button(0.938rem, 30%);
+      position: relative;
+      left: 26.5rem;
+      margin: 0.938rem 0;
+      margin: 0.938rem 0;
+    }
+  }
+  &__form-label {
+    font-size: 0.75;
+    font-weight: 700;
+    line-height: 1.875rem;
+    margin-bottom: 0.063rem;
+    color: $silver;
+  }
+  &__form-comments {
+    min-height: 6.25rem;
+    width: 95%;
+    background-color: $weird-white;
+    padding: 0.625rem;
+    border: 1px solid $mercury;
+    font-size: 0.938rem;
+    font-family: "avenir", sans-serif;
+    color: $transparent-black;
+    font-weight: 600;
+    border-radius: 4px 4px 4px 4px;
+    @include tablet {
+      min-height: 6.25rem;
+      width: 95%;
+      background-color: $weird-white;
+      padding: 0.625rem;
+      border: 1px solid $mercury;
+      font-size: 0.938rem;
+      font-family: "avenir", sans-serif;
+      color: $transparent-black;
+      font-weight: 600;
+      border-radius: 4px 4px 4px 4px;
+    }
+    @include desktop {
+      min-height: 6.25rem;
+      width: 95%;
+      background-color: $weird-white;
+      padding: 0.625rem;
+      border: 1px solid $mercury;
+      font-size: 0.938rem;
+      font-family: "avenir", sans-serif;
+      color: $transparent-black;
+      font-weight: 600;
+      border-radius: 4px 4px 4px 4px;
+    }
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-family: "avenir", sans-serif;
+    font-weight: 700;
+    color: $transparent-black;
+    font-size: 1.563rem;
+    @include tablet {
+      margin-bottom: 1.25rem;
+      font-family: "avenir", sans-serif;
+      font-weight: 700;
+      color: $transparent-black;
+      font-size: 2.5rem;
+    }
+    @include desktop {
+      margin-bottom: 2.5rem;
+      margin-left: 6.25rem;
+      font-family: "avenir", sans-serif;
+      font-weight: 700;
+      color: $transparent-black;
+      font-size: 2.5rem;
+    }
+  }
+}
+.comments__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  @include tablet {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 8rem;
+  }
+  @include desktop {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20rem;
+  }
+}
+
+.space {
+  // position: relative;
+  left: 0.313rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+
+  @include tablet {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-position: center;
+    background-size: cover;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    margin-right: 1.25rem;
+    border-radius: 50%;
+  }
+}
