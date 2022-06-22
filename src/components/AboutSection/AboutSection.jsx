@@ -1,5 +1,6 @@
 import React from "react";
 
+import Band from "../../assets/Images/band.jpg";
 import "./AboutSection.scss";
 
 function AboutSection() {
@@ -7,11 +8,7 @@ function AboutSection() {
     <section className="about">
       <h2 className="about__title">About the Musicians</h2>
       <div className="about__wrapper">
-        <img
-          className="about__img"
-          src="./assets/Images/band.jpg"
-          alt="band "
-        />
+        <img className="about__img" src={Band} alt="band " />
         <blockquote className="about__p-quote">
           "We push each other to be the best. It's not uncommon for one of us to
           say 'this needs to be better, back to the drawing board'”

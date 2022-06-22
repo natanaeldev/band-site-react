@@ -1,4 +1,10 @@
 import React from "react";
+
+import BandsiteLogo from "../../assets/logos/Logo-bandsite.svg";
+import Instagram from "../../assets/Icons/SVG/Icon-instagram.svg";
+import Twitter from "../../assets/Icons/SVG/Icon-twitter.svg";
+import Facebook from "../../assets/Icons/SVG/Icon-facebook.svg";
+
 import "./FooterSection.scss";
 
 function FooterSection() {
@@ -11,25 +17,13 @@ function FooterSection() {
               <h2 className="footer__title">Get in Touch</h2>
             </div>
             <div className="footer__icon">
-              <img
-                src="./assets/Icons/SVG/Icon-instagram.svg"
-                alt="instagram"
-                className="footer__icon"
-              />
-              <img
-                src="./assets/Icons/SVG/Icon-facebook.svg"
-                alt="facebook"
-                className="footer__icon"
-              />
-              <img
-                src="./assets/Icons/SVG/Icon-twitter.svg"
-                alt="twitter"
-                className="footer__icon"
-              />
+              <img src={Instagram} alt="instagram" className="footer__icon" />
+              <img src={Facebook} alt="facebook" className="footer__icon" />
+              <img src={Twitter} alt="twitter" className="footer__icon" />
             </div>
           </div>
           <div className="footer__logo hidden1">
-            <img src="./assets/logos/Logo-bandsite.svg" alt="" />
+            <img src={BandsiteLogo} alt="bandsite" />
           </div>
         </div>
         <div className="footer__detail-box">
@@ -91,7 +85,7 @@ function FooterSection() {
         </div>
       </div>
       <div className="footer__logo hidden">
-        <img src="./assets/logos/Logo-bandsite.svg" alt="bandsite" />
+        <img src={BandsiteLogo} alt="bandsite" />
       </div>
       <p className="footer__copy-right">
         Copyright The Bees Knees &copy 2021 All Rights Reserved

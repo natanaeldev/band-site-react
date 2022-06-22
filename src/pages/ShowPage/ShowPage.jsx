@@ -1,8 +1,17 @@
+import { useQuery, useMutation, useQueryClient } from "react-query";
+import { DataGrid } from "@mui/x-data-grid";
+
 import FooterSection from "../../components/FooterSection/FooterSection";
 import NavBarComponent from "../../components/NavBarComponent/NavBarComponent";
+
+import getShowPageData from "../../util/api/showpage-fetchdata";
+
 import "./ShowPage.scss";
+import Shows from "../../components/Shows/Shows";
 
 function ShowPage() {
+  const { data, status } = useQuery("showdates", getShowPageData);
+
   return (
     <>
       <header className="header">
@@ -58,18 +67,7 @@ function ShowPage() {
             </div>{" "} */}
           </div>
         </section>
-        <section className="shows">
-          <div>
-            <h2 className="shows__title">Shows</h2>
-          </div>
-          <div className="shows__wrapper">
-            <ul className="shows__list-title phone-hidden">
-              <li className="shows__item-title">DATE</li>
-              <li className="shows__item-title">VENUE</li>
-              <li className="shows__item-title">LOCATION</li>
-            </ul>
-          </div>
-        </section>
+        <Shows data={data} />
       </main>
       <FooterSection />
     </>

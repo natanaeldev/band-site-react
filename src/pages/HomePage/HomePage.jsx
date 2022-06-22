@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useQuery, useMutation, useQueryClient } from "react-query";
 
 import AboutSection from "../../components/AboutSection/AboutSection";
@@ -12,7 +12,7 @@ import {
   postComment,
   deleteComment,
   updateCommentLikes,
-} from "../../util/api/fetch-data";
+} from "../../util/api/homepage-fetchdata";
 import "./HomePage.scss";
 
 function HomePage() {
