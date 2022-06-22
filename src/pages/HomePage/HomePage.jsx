@@ -12,7 +12,7 @@ import {
   postComment,
   deleteComment,
   updateCommentLikes,
-} from "../../util/api/homepage-fetchdata";
+} from "../../util/fetch-helper/homepage-fetchdata";
 import "./HomePage.scss";
 
 function HomePage() {

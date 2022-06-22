@@ -4,7 +4,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import FooterSection from "../../components/FooterSection/FooterSection";
 import NavBarComponent from "../../components/NavBarComponent/NavBarComponent";
 
-import getShowPageData from "../../util/api/showpage-fetchdata";
+import getShowPageData from "../../util/fetch-helper/showpage-fetchdata";
 
 import "./ShowPage.scss";
 import Shows from "../../components/Shows/Shows";
