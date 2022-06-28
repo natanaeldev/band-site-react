@@ -7,6 +7,7 @@ function ShowList({ shows }) {
       <li className="shows__item">{date(shows.date)}</li>
       <li className="shows__item">{shows.place}</li>
       <li className="shows__item">{shows.location}</li>
+
       <button className="shows__button phone-hidden">BUY TICKETS</button>
     </ul>
   );
