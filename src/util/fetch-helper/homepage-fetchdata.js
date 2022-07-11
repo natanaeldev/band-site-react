@@ -3,9 +3,11 @@ const { default: axios } = require("axios");
 const url = process.env.REACT_APP_URL;
 const apiKey = process.env.REACT_APP_API_KEY;
 
-const getComment = async () => {
-  await axios.get(`${url}comments?api_key=${apiKey}`);
-};
+async function getComment() {
+  const comment = await axios.get(`${url}comments?api_key=${apiKey}`);
+
+  return comment;
+}
 
 const postComment = async (postData) => {
   await axios.post(`${url}comments?api_key=${apiKey}`, postData);
