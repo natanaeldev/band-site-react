@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import BandsiteLogo from "../../assets/logos/Logo-bandsite.svg";
 
 import "./navBarComponent.scss";
+
 function navBarComponent() {
   let classNameActive = "header__nav-bar-link header__nav-bar-link--active";
   let classname = "header__nav-bar-link";
@@ -9,7 +10,7 @@ function navBarComponent() {
   return (
     <nav className="header__nav-bar">
       <div className="header__nav-bar-logo">
-        <NavLink to="/home">
+        <NavLink to={"/" && "/home"}>
           <img src={BandsiteLogo} alt="band-site-logo" />
         </NavLink>
       </div>
